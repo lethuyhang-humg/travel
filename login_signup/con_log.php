@@ -18,7 +18,7 @@ if(isset($_POST['dangnhap'])){
         $row = $result->fetch_assoc();
         if ($password == $row['password']) {
             $_SESSION['username'] = $row['username'];
-            header('Location: ../TrangChu/mwlg.html');
+            header('Location: https://lethuyhang-humg.github.io/travel/home.html');
         } else {
             header('Location: login.php?warning_msg=error_password');
         }
