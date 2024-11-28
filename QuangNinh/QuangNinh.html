@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="giaodien2.css">
+    <title>Content</title>
+    <script>
+        function showDetails(title) {
+            let url = "https://example.com/details/" + title;
+            window.open(url, "_blank");
+        }
+    </script>
+    <script>
+
+        function includeHTML() {
+            var xhttp, element, file, i;
+            var elements = document.querySelectorAll("[data-include]");
+            for (i = 0; i < elements.length; i++) {
+                element = elements[i];
+                file = element.getAttribute("data-include");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            element.innerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body onload="includeHTML()">
+    <div data-include="header.html"></div>
+    <section>
+    </section>
+    <div class="box">
+        <div class="card">
+            <img src="images/vinhhalong.jpg" 
+            alt="Vịnh Hạ Long">
+            <h3>Vịnh Hạ Long</h3>
+            <p> Địa danh nổi tiếng nhất của Quảng Ninh, được UNESCO
+                công nhận là Di sản Thiên nhiên Thế giới. Vịnh có
+                hàng nghìn hòn đảo lớn nhỏ và những hang động kỳ vĩ.</p>
+            <button class="button" onclick="window.location.href='/moredetails/vinhhalong.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Coto.jpg" alt="Đảo Cô Tô">
+            <h3>Đảo Cô Tô</h3>
+            <p>Một trong những hòn đảo đẹp nhất ở miền Bắc với biển
+                xanh, cát trắng và các hoạt động biển thú vị như lặn
+                ngắm san hô, chèo thuyền kayak</p>
+            <button class="button" onclick="window.location.href='/moredetails/daocoto.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="images/chuayentu.jpg" alt="Chùa Yên Tử">
+            <h3>Chùa Yên Tử</h3>
+            <p>Khu di tích lịch sử và tâm linh gắn liền với Phật
+                giáo, là nơi Đức vua Trần Nhân Tông tu hành. Yên Tử
+                được mệnh danh là "Đất tổ của Phật giáo Việt Nam".</p>
+            <button class="button" onclick="window.location.href='/moredetails/chuayentu.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="images/hoyentrung.jpg" alt="Hồ Yên Trung">
+            <h3>Hồ Yên Trung</h3>
+            <p>Hồ Yên Trung ở thành phố Uông Bí là hồ nước ngọt lớn
+                nhất của Quảng Ninh, được bao quanh bởi rừng thông
+                xanh mát. Đây là điểm đến lý tưởng cho các hoạt động
+                dã ngoại, câu cá và nghỉ ngơi.</p>
+            <button class="button" onclick="window.location.href='/moredetails/hoyentrung.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="images/chuabavang.jpg" alt="Chùa Ba Vàng">
+            <h3>Chùa Ba Vàng</h3>
+            <p>Chùa Ba Vàng nằm ở thành phố Uông Bí, nổi tiếng với
+                kiến trúc tráng lệ và Đại hùng bảo điện lớn nhất
+                Việt Nam. Đây là một điểm đến tâm linh quan trọng,
+                thu hút đông đảo Phật tử và du khách.</p>
+            <button class="button" onclick="window.location.href='/moredetails/chuabavang.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="images/dencuaong.jpg" alt="Đền cửa ông">
+            <h3>Đền cửa ông</h3>
+            <p>Đền Cửa Ông là một di tích lịch sử và tâm linh nổi tiếng ở thành phố Cẩm Phả,Quảng Ninh,. 
+                Đây là nơi thờ Hưng Nhượng Đại Vương Trần Quốc Tảng, con trai của Hưng Đạo Đại Vương Trần Quốc Tuấn.</p>
+            <button class="button" onclick="window.location.href='/moredetails/dencuaong.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="images/baichay.jpg" alt="Bãi Cháy">
+            <h3>Bãi Cháy</h3>
+            <p>Bãi Cháy là một trong những khu du lịch nổi tiếng ở Hạ Long, Quảng Ninh.
+                Đây là bãi biển nhân tạo dài khoảng 500m,
+                được bao phủ bởi cát trắng mịn, thích hợp cho các hoạt động tắm biển và nghỉ dưỡng.</p>
+            <button class="button" onclick="window.location.href='/moredetails/baichay.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="images/quanlan.jpg" alt="Quan Lạn">
+            <h3>Quan Lạn</h3>
+            <p>Quan Lạn là một hòn đảo thuộc huyện Vân Đồn, tỉnh Quảng Ninh, nổi tiếng với vẻ đẹp hoang sơ, bãi biển trong xanh, và những dãy cát trắng trải dài.
+                Đây là điểm đến lý tưởng cho những ai muốn tìm kiếm sự yên bình.</p>
+            <button class="button" onclick="window.location.href='/moredetails/quanlan.html'">More details</button>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    padding-top: 80px; /* Adjusted for fixed header */
+}
+
+.image-container {
+    width: 35%; /* Để ảnh chiếm 1 góc của màn hình */
+    background-image: url('ho-ba-khoang.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    margin-right: 20px;
+}
+
+.text-container {
+    width: 65%; /* Nội dung chiếm phần còn lại */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-container h1 {
+    color: #34495e;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    background-color: #34495e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #34495e;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

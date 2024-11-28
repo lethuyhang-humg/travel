@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="giaodien2.css">
+    <title>Ninh Bình</title>
+    <script>
+        function showDetails(title) {
+            let url = "https://i.ytimg.com/vi/k2SGPe32vjs/maxresdefault.jpg" + title;
+            window.open(url, "_blank");
+        }
+    </script>
+    <script>
+
+        function includeHTML() {
+            var xhttp, element, file, i;
+            var elements = document.querySelectorAll("[data-include]");
+            for (i = 0; i < elements.length; i++) {
+                element = elements[i];
+                file = element.getAttribute("data-include");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            element.innerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body onload="includeHTML()">
+    <div class="Header">
+        <h1>Tourist Destinations in Ninh Bình</h1>
+        <h5>Explore the beauty of Ninh Bình in Việt Nam</h5>
+    </div>
+
+    <ul class="navigation">
+        <a href="/index.html">
+            <li>Home</li>
+        </a>
+        <a href="Destinations">
+            <li>Destinations</li>
+        </a>
+        <a href="Contact">
+            <li>Contact</li>
+        </a>
+        <a href="About">
+            <li>About</li>
+        </a>
+
+    </ul>
+    <!--<div data-include="header.html"></div>-->
+    <section>
+    </section>
+    <div class="box">
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.H56w9cH6HinXIuqam1Q7nQHaD8?rs=1&pid=ImgDetMain"
+                alt="Vườn Quốc Gia Cúc Phương">
+            <h3>Vườn Quốc Gia Cúc Phương</h3>
+            <p>Khu bảo tồn thiên nhiên, khu rừng đặc dụng có hệ động thực vật phong phú mang đặc trưng rừng mưa nhiệt đới.</p>
+            <button class="button" onclick="window.location.href='vqgcucphuong.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i0.wp.com/dulichdongque.com/wp-content/uploads/2016/02/khu-du-lich-trang-an-4.jpg" alt="Khu du lịch sinh thái Tràng An">
+            <h3>Khu du lịch sinh thái Tràng An</h3>
+            <p>Khu du lịch sinh thái nằm trong Quần thể di sản thế giới Tràng An với hệ thống những dãy núi đá vôi, hang động, hồ đầm.</p>
+            <button class="button" onclick="window.location.href='trangan.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://dulichtute.com/wp-content/uploads/2022/07/chua-bai-dinh-ninh-binh.jpg"
+                alt="Chùa Bái Đính">
+            <h3>Chùa Bái Đính</h3>
+            <p>Quần thể chùa lớn với nhiều kỉ lục châu Á và Việt Nam được xác lập như chùa có tượng Phật bằng đồng dát vàng, chùa có hành lang dài nhất châu Á</p>
+            <button class="button" onclick="window.location.href='chuabaidinh.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://thumbs.dreamstime.com/b/hoa-lu-vietnam-november-temple-dinh-tien-hoang-ninh-binh-first-capital-popular-tourist-destination-province-133571674.jpg"
+                alt="Cố Đô Hoa Lư">
+            <h3>Cố Đô Hoa Lư</h3>
+            <p>Là kinh đô của Việt Nam trong giai đoạn 968-1010. Đây là kinh đô đầu tiên của nhà nước phong kiến Trung ương tập quyền ở Việt Nam.</p>
+            <button class="button" onclick="window.location.href='cdhoalu.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.asiantrails.travel/wp-content/uploads/2023/07/vietnam-ninh-binh-tam-coc-bich-dong-pixabay-3798495-e1689241949532.jpg" alt="tam Cốc - Bích Động">
+            <h3>Tam Cốc - Bích Động</h3>
+            <p>Tam Cốc – Bích Động là quần thể hang động ở vùng đất xã Ninh Hải huyện Hoa Lư tỉnh Ninh Bình, Việt Nam và còn được biết đến với những cái tên nổi tiếng như "vịnh Hạ Long trên cạn" hay "Nam thiên đệ nhị động".</p>
+            <button class="button" onclick="window.location.href='tcbichdong.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://localvietnam.nl/wp-content/uploads/2019/04/van-long-nature-reserve.jpg"
+                alt="Khu du lịch Vân Long">
+            <h3>Khu du lịch Vân Long</h3>
+            <p>Vân Long là khu bảo tồn thiên nhiên đất ngập nước lớn nhất vùng đồng bằng châu thổ Bắc Bộ với cảnh núi non hoà quyện yên bình.</p>
+            <button class="button" onclick="window.location.href='vanlong.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://saoviettravel.com.vn/blog/wp-content/uploads/2012/12/nha-tho-phat-diem-ninh-binh-1.jpg"
+                alt="Nhà thờ đá Phát Diệm">
+            <h3>Nhà thờ đá Phát Diệm</h3>
+            <p>Nhà thờ chính tòa Phát Diệm (thường gọi là Nhà thờ đá Phát Diệm) là một quần thể nhà thờ Công giáo rộng khoảng 22 ha, nằm tại thị trấn Phát Diệm, huyện Kim Sơn, tỉnh Ninh Bình.</p>
+            <button class="button" onclick="window.location.href='ntdphatdiem.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://media.gody.vn/images/ninh-binh/hang-mua-ninh-binh/12-2016/20161216064650-hang-mua-ninh-binh-gody%20(2).jpg" alt="Hang Múa">
+            <h3>Hang Múa</h3>
+            <p>Hang Múa là một điểm du lịch nằm trong vùng lõi Quần thể di sản thế giới Tràng An, tỉnh Ninh Bình. Hang Múa có đặc điểm địa chất, địa mạo đặc trưng của vùng núi đá vôi có tuổi đời hàng triệu năm.</p>
+            <button class="button" onclick="window.location.href='hangmua.html';">More details</button>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Ninh Binh Tourism. All Rights Reserved.
+    </div>
+
+    <!--<div id="footer-container"></div>-->
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+</body>
+
+</html>

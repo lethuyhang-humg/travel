@@ -1,0 +1,130 @@
+/* Tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fc;
+    color: #333;
+}
+
+/* Thẻ card */
+.card {
+    max-height: 1280px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card header */
+.card-header {
+    background-color: #006bb3;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
+}
+
+/* Card body */
+.card-body {
+    padding: 20px;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thead-dark th {
+    background-color: #004a7c;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+table td, table th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Hình ảnh trong bảng */
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Nút và liên kết */
+.btn{
+    padding-left: 24px;
+}
+.btn-primary, .btn-success {
+    background-color: #007bb5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+}
+
+.btn-primary:hover, .btn-success:hover {
+    background-color: #006bb3;
+}
+
+a {
+    color: #007bb5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #004a7c;
+}
+
+a[onclick] {
+    color: red;
+}
+
+a[onclick]:hover {
+    color: #d32f2f;
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #006bb3;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.form-control:focus {
+    border-color: #007bb5;
+    box-shadow: 0 0 5px rgba(0, 123, 181, 0.5);
+}
+
+/* Hiển thị ảnh hiện tại */
+img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+

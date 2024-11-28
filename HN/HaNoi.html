@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="giaodien2.css">
+    <title>Hà Nội</title>
+    <script>
+        function includeHTML() {
+            var xhttp, element, file, i;
+            var elements = document.querySelectorAll("[data-include]");
+            for (i = 0; i < elements.length; i++) {
+                element = elements[i];
+                file = element.getAttribute("data-include");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            element.innerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body onload="includeHTML()">
+    <section>
+        <div data-include="header.html"></div>
+    </section>
+    <div class="box">
+        <div class="card" >
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNk0hiKji1aeJiKGmyWvsQkokDlNbXQyJufTMiV=s1360-w1360-h1020-rw"
+                alt="Lăng Chủ tịch Hồ Chí Minh">
+            <h3>Lăng Chủ tịch Hồ Chí Minh</h3>
+            <p></p>
+            <button class="button" onclick="window.location.href='/HN/diadanhHN/LangChuTich.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipO6afkO-K6SXbrj8NFvzKsFJSHWKbj9vCGxRjUc=s1360-w1360-h1020-rw" alt="Văn Miếu – Quốc Tử Giám">
+            <h3>Văn Miếu – Quốc Tử Giám</h3>
+            <p></p>
+            <button class="button" onclick="window.location.href='/HN/diadanhHN/VanMieu.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://lh3.googleusercontent.com/proxy/Pob69H8rpdBbKoKjPPOS6Dfr9K4vW-BI-HqEKLO2DM4lZQf0qicBsT6b2Bvt_o5bQxdjoLZ_Rw_3h6DSwjJ13AIlaaGyaMvKwJbJBB77HhJXeNu-JwJJD8N4L_kqaEHv34lMCGQcLylgQGdYcL7qbIcaqd1OZfs=s1360-w1360-h1020-rw"
+                alt="Hoàng Thành Thăng Long">
+            <h3>Hoàng Thành Thăng Long</h3>
+            <p></p>
+            <button class="button" onclick="window.location.href='/HN/diadanhHN/HoangThanh.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://lh3.googleusercontent.com/proxy/3exjYBL0wwHKhReKkKLhZxcGVeyd9S6GEUuNhAkyqEVovzTVwilIPSH7sqeBlu-TU-QdH0VGLZBIIgxPfKkQ8zgaSIU0cBWpa4zU904oj3e0IBdeErLl_6uuixHwkC8t1NECQQMTSWnzyOvDO8bkw_I6SEoa6A=s1360-w1360-h1020-rw"
+                alt="Nhà hát Lớn Hà Nội">
+            <h3>Nhà hát Lớn Hà Nội</h3>
+            <p></p>
+            <button class="button" onclick="window.location.href='/HN/diadanhHN/NhaHatLon.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://lh3.googleusercontent.com/proxy/G1EyrVu4GKsmbjndkD7EBYvyauKzZU8TJfgNZCRAxgEeHRHlk2bRP-3ktkV1-afTyO87Ozu_rcXBs9ChyqhtvPqcklr0kVJQNUp93aIskiAWpQIaMXdsDEblEsBlhneuy0YJdTqvqfWpXg4b8SYwLNmWrtCkbDM=s1360-w1360-h1020-rw" alt="Đảo Hòn Dáu">
+            <h3>Di tích Nhà tù Hỏa Lò</h3>
+            <p></p>
+            <button class="button" onclick="window.location.href='/HN/diadanhHN/HoaLo.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://lh3.googleusercontent.com/proxy/a9YPcsk3Joq8h9XDn5yTiKmD4wR55SfKCfbiiRwYZUUYEnFdUx3H0AfxX7xJXws1JsuDlKRM_G5rDE1OAbMhXzD5Sr8rmeN9BnbcdKNq5TlNwuaZeBt-K-AiUd3lmYPeDc-W8e4yrGHbmep8Mbjy6ZcyrGCnCw=s1360-w1360-h1020-rw"
+                alt="Bảo tàng Mỹ thuật Việt Nam">
+            <h3>Bảo tàng Mỹ thuật Việt Nam</h3>
+            <p></p>
+            <button class="button" onclick="window.location.href='/HN/diadanhHN/BTMyThuat.html'">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPUmzGwHT28WRuDupmbTZhJpoG0EJAD2SdSAueN=s1360-w1360-h1020-rw" alt="Quảng trường Ba Đình">
+            <h3>Quảng trường Ba Đình</h3>
+            <p></p>
+            <button class="button" onclick="window.location.href='/HN/diadanhHN/QtBaDinh.html'">More details</button>
+        </div>
+
+    <div class="card">
+        <img src="https://vietnam.travel/sites/default/files/inline-images/Attractions%20Hanoi%20Vietnam%20Tourism-4.jpg"
+            alt="Khu Phố Cổ Hà Nội">
+        <h3>Khu Phố Cổ Hà Nội</h3>
+        <p></p>
+        <button class="button" onclick="window.location.href='/HN/diadanhHN/PhoCo.html'">More details</button>
+    </div>
+    
+    <div id="footer-container"></div>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+</body>
+
+</html>

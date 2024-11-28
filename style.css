@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #0a1e27;
+  --secondary-color: #e9c675;
+  --text-light: #cbd5e1;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Playfair Display", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__subheader {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 1rem;
+  padding-left: 5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--secondary-color);
+}
+
+.section__subheader::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 4rem;
+  background-color: var(--secondary-color);
+}
+
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--white);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(10, 30, 39, 0.5);
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+  color: var(--white);
+}
+
+.h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+  color: var(--white);
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+}
+
+.header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 15rem);
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0),
+      var(--primary-color)
+    ),
+    url('vietnam.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  position: relative;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  z-index: 9;
+}
+
+.nav__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__links {
+  position: static;
+  right: 1rem;
+  top: 68px;
+  width: calc(100% - 1rem);  /* Chiều rộng bằng 100% trừ 2rem */
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row; /* Đảm bảo các phần tử con nằm trên cùng một dòng */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Khoảng cách giữa các phần tử */
+  background-color: rgba(10, 30, 39, 0.8);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+
+.nav__links a {
+  font-weight: 500;
+  color: var(--white);
+}
+
+.nav__links a:hover {
+  color: var(--secondary-color);
+}
+
+.header__container {
+  position: relative;
+  isolation: isolate;
+  height: calc(100% - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__content {
+  max-width: 700px;
+}
+
+.header__content .section__header {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 5rem;
+}
+
+.header__content a {
+  color: var(--white);
+}
+
+.header__content a:hover {
+  color: var(--secondary-color);
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  display: none; 
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.menu:hover .dropdown {
+  display: block; /* Hiển thị khi hover */
+}

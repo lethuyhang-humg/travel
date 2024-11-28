@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="haiphong.css">
+    <title>Tourist Destinations in Hải Phòng</title>
+    <script>
+        function showDetails(title) {
+            let url = "https://example.com/details/" + title;
+            window.open(url, "_blank");
+        }
+    </script>
+
+    <script>
+
+        function includeHTML() {
+            var xhttp, element, file, i;
+            var elements = document.querySelectorAll("[data-include]");
+            for (i = 0; i < elements.length; i++) {
+                element = elements[i];
+                file = element.getAttribute("data-include");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            element.innerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="Header">
+        <h1>Tourist Destinations in Hải Phòng</h1>
+        <h5>Explore the beauty of Hải Phòng in Việt Nam</h5>
+    </div>
+
+    <ul class="navigation">
+        <a href="/index.html">
+            <li>Home</li>
+        </a>
+        <a href="Destinations">
+            <li>Destinations</li>
+        </a>
+        <a href="Contact">
+            <li>Contact</li>
+        </a>
+        <a href="About">
+            <li>About</li>
+        </a>
+    </ul>
+
+
+    <div class="box">
+        <div class="card">
+            <img src="https://vuyen-vinhomes.com/ckfinder/userfiles/images/%C4%91%C4%83ng%20b%C3%A0i%20th%C3%A1ng%204/33/duong-den-vinhomes-vu-yen-nhanh-nhat-01.jpg"
+                alt="Đảo Vũ Yên">
+            <h3>Đảo Vũ Yên</h3>
+            <p>Đảo Vũ Yên, với hệ sinh thái đa dạng và không khí trong lành, là điểm du lịch sinh thái yên bình, nổi bật
+                với vẻ đẹp hoang sơ và văn hóa đặc sắc.</p>
+            <button class="button" onclick="window.location.href='daovuyen.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://haiphongnews.gov.vn/uploads/2023-T6/nui-voi-1.png" alt="Núi Voi">
+            <h3>Núi Voi</h3>
+            <p>Núi Voi ngọn núi cao với vẻ đẹp thiên nhiên hoang sơ và các hang động kỳ vĩ, là điểm du lịch
+                lý tưởng kết hợp
+                tham quan di tích lịch sử và văn hóa đặc sắc.
+
+
+
+            </p>
+            <button class="button" onclick="window.location.href='nuivoi.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://image.tienphong.vn/w890/Uploaded/2024/lkyqski001/2017_08_22/9a_YTCG.jpg"
+                alt="Tuyệt Tình Cốc">
+            <h3>Tuyệt Tình Cốc</h3>
+            <p>Tuyệt Tình Cốc Hải Phòng, với nước trong xanh và cảnh đẹp hùng vĩ, là điểm du lịch lý tưởng cho giới trẻ
+                và những bức hình "sống ảo" tuyệt đẹp.
+
+
+
+            </p>
+            <button class="button" onclick="window.location.href='tuyettinhcoc.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.bambooairways.com/documents/20122/1165110/du-lich-do-son-1.jpg/e40df874-5f31-c397-bf14-5e21ba16e99a?t=1695021084287"
+                alt="Bãi biển Đồ Sơn">
+            <h3>Bãi biển Đồ Sơn</h3>
+            <p>Bãi biển Đồ Sơn, với cát mịn và biển thoai thoải, là điểm du lịch nổi bật của Hải Phòng, nổi tiếng với
+                các hoạt động biển và hải sản tươi ngon.</p>
+            <button class="button" onclick="window.location.href='doson.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://onevivu.vn/wp-content/uploads/2024/04/hon-dau-1.jpg" alt="Đảo Hòn Dáu">
+            <h3>Đảo Hòn Dáu</h3>
+            <p>Hòn Dấu Hải Phòng, với không gian thoáng đãng, mát mẻ và hoạt động du lịch biển thú vị, là điểm đến lý
+                tưởng cho các chuyến du lịch cuối tuần.</p>
+            <button class="button" onclick="window.location.href='daohondau.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://congluan-cdn.congluan.vn/files/news/2021/11/30/dao-long-chau--ve-dep-hoang-so-ky-vi-giua-vinh-lan-ha-064610.jpg"
+                alt="Đảo Long Châu">
+            <h3>Đảo Long Châu</h3>
+            <p>Đảo Long Châu, với vẻ đẹp hoang sơ, hải đăng hơn 100 tuổi và khung cảnh hiểm trở, là điểm đến lý tưởng
+                cho du khách yêu thích khám phá và chụp ảnh.
+
+
+
+            </p>
+            <button class="button" onclick="window.location.href='daolongchau.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://phapluat.tuoitrethudo.vn/stores/news_dataimages/nguyenvanhuy/092023/17/08/5048_1218765286-aerial-view-floating-fishing-village-rock.jpg?rt=20230917085050"
+                alt="Đảo Cát Bà">
+            <h3>Đảo Cát Bà</h3>
+            <p>Cát Bà, với bãi biển trong lành, vịnh Lan Hạ và các điểm du lịch hấp dẫn, là điểm đến lý tưởng cho du
+                khách yêu thích thiên nhiên và ẩm thực Hải Phòng.
+
+
+
+            </p>
+            <button class="button" onclick="window.location.href='catba.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn3.ivivu.com/2023/04/bachlongvi1.jpg" alt="Đảo Bạch Long Vĩ">
+            <h3>Đảo Bạch Long Vĩ</h3>
+            <p>Đảo Bạch Long Vỹ, với bãi biển hoang sơ, ngọn hải đăng cao 80m và chùa Bạch Long Tự, là điểm du lịch lý
+                tưởng cho những chuyến khám phá và thư giãn.
+
+
+
+            </p>
+            <button class="button" onclick="window.location.href='bachlongvy.html';">More details</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        &copy; 2024 Hai Phong Tourism. All Rights Reserved.
+    </div>
+
+</body>
+
+</html>

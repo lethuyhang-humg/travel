@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="giaodien2.css">
+    <title>Content</title>
+    <script>
+        function showDetails(title) {
+            let url = "https://i.ytimg.com/vi/k2SGPe32vjs/maxresdefault.jpg" + title;
+            window.open(url, "_blank");
+        }
+    </script>
+    <script>
+
+        function includeHTML() {
+            var xhttp, element, file, i;
+            var elements = document.querySelectorAll("[data-include]");
+            for (i = 0; i < elements.length; i++) {
+                element = elements[i];
+                file = element.getAttribute("data-include");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            element.innerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body onload="includeHTML()">
+    <div class="Header">
+        <h1>Tourist Destinations in Điện Biên</h1>
+        <h5>Explore the beauty of Điện Biên in Việt Nam</h5>
+    </div>
+
+    <ul class="navigation">
+        <a href="/index.html">
+            <li>Home</li>
+        </a>
+        <a href="Destinations">
+            <li>Destinations</li>
+        </a>
+        <a href="Contact">
+            <li>Contact</li>
+        </a>
+        <a href="About">
+            <li>About</li>
+        </a>
+
+    </ul>
+    <!--<div data-include="header.html"></div>-->
+
+    <section>
+    </section>
+    <div class="box">
+        <div class="card">
+            <img src="a-pa-chai.webp"
+                alt="a-pa-chai">
+            <h3>A Pa Chải</h3>
+            <p>A Pa Chải thuộc địa phận của xã Sín Thầu, huyện Mường Nhé, Điện Biên. Đây cũng là nơi gắn liền giữa ranh giới của nước ta với Lào và Trung Quốc, được mệnh danh là nơi "1 con gà gáy cả ba nước đều nghe thấy".</p>
+            <button class="button" onclick="window.location.href='apachai.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="bao-tang.webp" alt="Bảo tàng">
+            <h3>Bảo tàng chiến thắng Điện Biên Phủ</h3>
+            <p>Nơi đây sở hữu thiết kế vô cùng ấn tượng với biểu tượng hình nón cụt. Phía bên trong được trang trí hình quả trám. Hình quả trám tượng trưng cho tấm lưới ngụy trang của chiếc mũ cụ Hồ thời xưa.</p>
+            <button class="button" onclick="window.location.href='baotang.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="cao-nguyen-da-Tua-Chua.jpg"
+                alt="cao nguyên đá">
+            <h3>Cao nguyên đá Tủa Chùa</h3>
+            <p>Toạ lạc ở huyện Tủa Chùa, có độ cao 1400 m so với mực nước biển. Đây là cao nguyên đá vôi đầu tiên, là điểm nhấn tạo nên vẻ đẹp độc đáo riêng cho địa phương này.</p>
+            <button class="button" onclick="window.location.href='caonguyenda.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="deo-pha-din.webp"
+                alt="đèo pha đin">
+            <h3>Đèo Pha Đin - Một trong tứ đại đỉnh đèo của Việt Nam</h3>
+            <p>Tương truyền rằng nơi đây được vạch định là điểm ngăn cách giữa Điện Biên và Sơn La. Thời đó, người và ngựa của hai tỉnh đều cùng xuất phát trong cuộc đua. Hai bên ngang tài ngang sức, khó phân thắng bại. Đến phút cuối, ngựa của Lai Châu nhanh hơn nên đèo Pha Đin ở địa phận Điện Biên dài hơn chút.</p>
+            <button class="button" onclick="window.location.href='deophadin.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="ho-ba-khoang.webp" alt="hồ pa khoang">
+            <h3>Hồ Pá Khoang</h3>
+            <p> Hồ thuộc ranh giới giữa hai xã Mường Păng và Pá Khoang, nằm cách chiến dịch Điện Biên Phủ 8km về phía Tây. Xung quanh hồ được kiến tạo bởi hơn 300 loài động vật và 700 loài thực vật, cùng với đó, nhờ sở hữu vẻ đẹp hữu tình và làn nước xanh biếc, nơi đây còn được mệnh danh là “Vịnh hạ Long trên cạn”. </p>
+            <button class="button" onclick="window.location.href='hopakhoang.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="muong-nhe.webp"
+                alt="Mường nhé">
+            <h3>Mường Nhé</h3>
+            <p>Từ thị trấn Mường Chà, bạn chỉ cần men theo con đường lên biên giới - Mường Chà - Si Pha Phin là có thể đến khu bảo tồn này.Tính đến nay, khu bảo tồn đã có tổng diện tích gần 310.262 ha, khoảng 118.000 ha đất rừng nguyên sinh.</p>
+            <button class="button" onclick="window.location.href='muongnhe.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="suoi-nuoc-nong.webp"
+                alt="suối nước nóng">
+            <h3>Suối nước nóng U Va</h3>
+            <p>Nằm cách thành phố Điện Biên khoảng 15km, suối nước nóng U Va sở hữu tổng diện tích lên đến 73.000 m2. Tương truyền rằng suối nước nóng này chính là một cái nôi được bà tiên nằm trên đó.</p>
+            <button class="button" onclick="window.location.href='suoinuocnong.html';">More details</button>
+        </div>
+
+        <div class="card">
+            <img src="thanh-ban-phu.webp" alt="thành bản phủ">
+            <h3>Thành Bản Phủ</h3>
+            <p>Địa điểm du lịch được nhà nước xếp hạng di tích quốc gia - Thành Bản Phủ. Địa điểm này được xây dựng cách đây hơn 200 năm. Nơi đây ghi dấu rất nhiều những hoạt động nổi bật cho người anh hùng Hoàng Công Chất, bởi, ông chính là hình tượng cho tinh thần đại đoàn kết của dân tộc khi chống giặc ngoại xâm.</p>
+            <button class="button" onclick="window.location.href='thanhbanphu.html';">More details</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Ninh Binh Tourism. All Rights Reserved.
+    </div>
+
+    <!--<div id="footer-container"></div>-->
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+</body>
+
+</html>
